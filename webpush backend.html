@@ -86,6 +86,7 @@ function sendPushMessage() {
     })
   })
   .then((response) => {
+    console.log(response);
     if (response.status !== 200) {
       return response.text()
       .then((responseText) => {
@@ -96,7 +97,9 @@ function sendPushMessage() {
 }
 
 function initialiseUI() {
-  
+  const sendBtn = document.querySelector('.js-send-push');
+  sendBtn.addEventListener('click', () => {
+    sendBtn.disabled = true;
 
     sendPushMessage()
     .catch((err) => {
@@ -106,7 +109,19 @@ function initialiseUI() {
     .then(() => {
       sendBtn.disabled = false;
     });
-  };
+  });
+
+  const previousDetails = getDetails();
+  if (previousDetails) {
+    const subscriptionTextArea = document.querySelector('#push-subscription');
+    const textToSendTextArea = document.querySelector('#push-data');
+
+    subscriptionTextArea.value = previousDetails.subscription;
+    textToSendTextArea.value = previousDetails.data;
+  }
+
+  sendBtn.disabled = false;
+}
 
   
 
