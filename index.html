@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 
 <head>
-<link rel="manifest" href="/manifest.json">
-<script src="https://sdk.pushy.me/web/1.0.5/pushy-sdk.js"></script>
+<link rel="manifest" href="manifest.json">
 
 	<!-- The core Firebase JS SDK is always required and must be listed first -->
 <script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
@@ -13,7 +12,7 @@
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
-    apiKey: "AAAADnO1zsw:APA91bF5I-D8kSKM-3VQqaSb4TwgDxwoq50UULPz9h_mFDzCpUW0wu9Cvk0ScP0mvl6lZ_bJTaoM9rKLyp4r8-zLYW-7LHtphwmlbyAPoDzpdG7laiQ_mVbEp3q-CwIlOj7u7ITqBApK",
+    apiKey: "AIzaSyBs5_imj9itS8jDGF2xGHe0jf6BULs05h8",
     authDomain: "sample-932e3.firebaseapp.com",
     databaseURL: "https://sample-932e3.firebaseio.com",
     projectId: "sample-932e3",
@@ -25,14 +24,17 @@
   firebase.initializeApp(firebaseConfig);
 </script>
 
+<!-- Manifest linking -->
+
+<link rel="manifest" href="manifest.json">
 
 
 <!--Clevertap Integration-->
 
 <script type="text/javascript">
-     var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[], privacy:[]};
+     var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[], privacy:[], region : 'sk1'};
 
-clevertap.account.push({"id":"W67-774-7Z5Z"});
+clevertap.account.push({"id":"4R4-5K9-475Z"});
 clevertap.privacy.push({optOut: false}); 
 clevertap.privacy.push({useIP: false}); 
  (function () {
@@ -141,7 +143,7 @@ body {
 
 <div class="form-group"><label for="email">Event name</label> <input class="form-control" id="Event_name" placeholder="Product Viewed" type="email" /></div>
 
-<div class="form-group"><label for="email">Product Name</label> <input class="form-control" id="product_name" placeholder="Test product" type="email" /></div>
+<div class="form-group"><label for="email">Product Name</label> <input class="form-control" id="product_name" placeholder="$replacement$##n:[ add your default value here ]$/replacement$" type="email" /></div>
 <div class="form-group"><label for="email">Delivery_Date</label> <input class="form-control" id="Delivery_Date" placeholder="$D_1564642902" type="email" /></div>
 <button class="btn btn-default" id="btnClevertap_event" type="button" onclick="sendClevertap_event()">Send Event</button></div>
 
