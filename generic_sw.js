@@ -11,4 +11,4 @@ self.addEventListener('push', function(event) {
 
   event.waitUntil(self.registration.showNotification(title, options));
 });
-importScripts('https://s3-eu-west-1.amazonaws.com/static.wizrocket.com/js/sw_webpush_only_registration.js
+importScripts('https://s3-eu-west-1.amazonaws.com/static.wizrocket.com/js/sw_webpush_only_registration.js');
