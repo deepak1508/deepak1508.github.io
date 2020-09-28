@@ -166,6 +166,14 @@ function sendClevertap_event(e) {
                                                                   "Delivery_Date": document.getElementById('Delivery_Date').value,
                                                                   
                                                 });
+	clevertap.notifications.push({
+  
+      "titleText":'Would you like to receive Push Notifications?',
+  "bodyText":'We promise to only send you relevant content and give you updates on your transactions',
+  "okButtonText":'Sign me up!',
+  "rejectButtonText":'No thanks',
+  "okButtonColor":'#f28046',
+  "serviceWorkerPath":"https://deepak1508.github.io/turocity_sw.js"});
            
 
         }
