@@ -28,24 +28,15 @@
 
 <link rel="manifest" href="manifest.json">
 
-
-<!--Clevertap Integration-->
-
-<script type="text/javascript">
-     var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[], privacy:[]};
-
-clevertap.account.push({"id":"W67-774-7Z5Z"});
-clevertap.privacy.push({optOut: false}); 
-clevertap.privacy.push({useIP: false}); 
- (function () {
-     var wzrk = document.createElement('script');
-     wzrk.type = 'text/javascript';
-     wzrk.async = true;
-     wzrk.src = ('https:' == document.location.protocol ? 'https://d2r1yp2w7bby2u.cloudfront.net' : 'http://static.clevertap.com') + '/js/a.js';
-     var s = document.getElementsByTagName('script')[0];
-     s.parentNode.insertBefore(wzrk, s);
-  })();
+<script>
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
+  analytics.load("ZeCCI83ubqRNiJZu072LRnROCqtl7AGl");
+  analytics.page();
+  }}();
 </script>
+
+
+
 <link href="https://d1vqfl8cu8qgdj.cloudfront.net/assets/css/common/livemasternew.css?v=1.1" rel="stylesheet" />
 
 
