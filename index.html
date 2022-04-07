@@ -6,6 +6,48 @@
 
 <head>
 <link rel="manifest" href="manifest.json">
+
+  }
+// end of facbook script	
+	
+<!-- <script type="text/javascript">
+var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[], privacy:[]};
+
+clevertap.account.push({"id": "W67-774-7Z5Z"}); // replace with the CLEVERTAP_ACCOUNT_ID with the actual ACCOUNT ID value from your Dashboard -> Settings page
+clevertap.privacy.push({optOut: false}); //set the flag to true, if the user of the device opts out of sharing their data
+clevertap.privacy.push({useIP: false}); //set the flag to true, if the user agrees to share their IP data
+ (function () {
+		 var wzrk = document.createElement('script');
+		 wzrk.type = 'text/javascript';
+		 wzrk.async = true;
+		 wzrk.src = ('https:' == document.location.protocol ? 'https://d2r1yp2w7bby2u.cloudfront.net' : 'http://static.clevertap.com') + '/js/a.js';
+		 var s = document.getElementsByTagName('script')[0];
+		 s.parentNode.insertBefore(wzrk, s);
+  })();
+</script> -->
+	
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBs5_imj9itS8jDGF2xGHe0jf6BULs05h8",
+    authDomain: "sample-932e3.firebaseapp.com",
+    databaseURL: "https://sample-932e3.firebaseio.com",
+    projectId: "sample-932e3",
+    storageBucket: "",
+    messagingSenderId: "62070836940",
+    appId: "1:62070836940:web:f6c9e1db2f83a07a873c69"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+<scrip>
 // Facebook pixel
 window.fbAsyncInit = function () {
     // JavaScript SDK configuration and setup
@@ -48,46 +90,7 @@ window.fbAsyncInit = function () {
         }
       }
     });
-  }
-// end of facbook script	
-	
-<!-- <script type="text/javascript">
-var clevertap = {event:[], profile:[], account:[], onUserLogin:[], notifications:[], privacy:[]};
-
-clevertap.account.push({"id": "W67-774-7Z5Z"}); // replace with the CLEVERTAP_ACCOUNT_ID with the actual ACCOUNT ID value from your Dashboard -> Settings page
-clevertap.privacy.push({optOut: false}); //set the flag to true, if the user of the device opts out of sharing their data
-clevertap.privacy.push({useIP: false}); //set the flag to true, if the user agrees to share their IP data
- (function () {
-		 var wzrk = document.createElement('script');
-		 wzrk.type = 'text/javascript';
-		 wzrk.async = true;
-		 wzrk.src = ('https:' == document.location.protocol ? 'https://d2r1yp2w7bby2u.cloudfront.net' : 'http://static.clevertap.com') + '/js/a.js';
-		 var s = document.getElementsByTagName('script')[0];
-		 s.parentNode.insertBefore(wzrk, s);
-  })();
-</script> -->
-	
-
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/6.6.1/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#config-web-app -->
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyBs5_imj9itS8jDGF2xGHe0jf6BULs05h8",
-    authDomain: "sample-932e3.firebaseapp.com",
-    databaseURL: "https://sample-932e3.firebaseio.com",
-    projectId: "sample-932e3",
-    storageBucket: "",
-    messagingSenderId: "62070836940",
-    appId: "1:62070836940:web:f6c9e1db2f83a07a873c69"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
+</script	
 
 <!-- Manifest linking -->
 
