@@ -69,6 +69,7 @@ window.fbAsyncInit = function () {
     FB.login(function (response) {
       if (response.authResponse) {
         const accessToken = response.authResponse.accessToken;
+	      console.log("access token:"+response.authResponse.accessToken);
         //Use this token to call the debug_token API and get the shared WABA's ID
       } else {
         console.log('User cancelled login or did not fully authorize.');
@@ -195,9 +196,10 @@ body {
 
 <h4> Event property form</h4>
 
-<div class="form-group"><label for="email">Event name</label> <input class="form-control" id="Event_name" placeholder="final FB test" type="email" /></div>
+<div class="form-group"><label for="email">Event name</label> <input class="form-control" id="Event_name" placeholder="final 
+	test" type="email" /></div>
 
-<div class="form-group"><label for="email">Product Name</label> <input class="form-control" id="product_name" placeholder="$replacement$##n:[ add your default value here ]$/replacement$" type="email" /></div>
+<div class="form-group"><label for="email">Product Name</label> <input class="form-control" id="product_name" placeholder=FB logs test type="email" /></div>
 <div class="form-group"><label for="email">Delivery_Date</label> <input class="form-control" id="Delivery_Date" placeholder="$D_1564642902" type="email" /></div>
 <button class="btn btn-default" id="btnClevertap_event" type="button" onclick="sendClevertap_event()">Send Event</button></div>
 
