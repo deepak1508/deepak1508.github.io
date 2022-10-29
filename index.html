@@ -43,7 +43,7 @@
 window.fbAsyncInit = function () {
     // JavaScript SDK configuration and setup
     FB.init({
-      appId:    '1152331082074384', // Facebook App ID
+      appId:    '1998649913658559', // Facebook App ID
       cookie:   true, // enable cookies
       xfbml:    true, // parse social plugins on this page
       version:  'v13.0' //Graph API version
@@ -69,10 +69,10 @@ window.fbAsyncInit = function () {
     FB.login(function (response) {
       if (response.authResponse) {
         const accessToken = response.authResponse.accessToken;
-	      console.log("access token:"+response.authResponse.accessToken);
+	      console.log("access token is:"+response.authResponse.accessToken);
         //Use this token to call the debug_token API and get the shared WABA's ID
       } else {
-        console.log('User cancelled login or did not fully authorize.');
+        console.log("error message:"+'User cancelled login or did not fully authorize.');
       }
     }, {
       scope: 'business_management,whatsapp_business_management',
