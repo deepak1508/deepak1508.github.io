@@ -40,12 +40,6 @@
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
 
-function checkLoginState() {
-  FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-   Console.log("response:"+response)'
-  });
-}
 </script>
 
 	
@@ -157,7 +151,7 @@ body {
 
 <h4> Event property form</h4>
 
-<div class="form-group"><label for="email">Event name</label> <input class="form-control" id="Event_name" placeholder="FBl4B 1" type="email" /></div>
+<div class="form-group"><label for="email">Event name</label> <input class="form-control" id="Event_name" placeholder="FBl4B" type="email" /></div>
 
 <div class="form-group"><label for="email">Product Name</label> <input class="form-control" id="product_name" placeholder="CT_in logs test" type="email" /></div>
 <div class="form-group"><label for="email">Delivery_Date</label> <input class="form-control" id="Delivery_Date" placeholder="sG test" type="email" /></div>
@@ -195,6 +189,14 @@ function sendClevertap_event(e) {
         }
         
 
+</script>
+<script type="text/javascript">
+function checkLoginState() {
+FB.getLoginStatus(function(response) {
+statusChangeCallback(response);
+Console.log("response:"+response)'
+  });
+}
 </script>
 
 <button onclick="checkLoginState()" style="background-color: #1877f2; border: 0; border-radius: 4px; color: #fff; cursor: pointer; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; height: 40px; padding: 0 24px;">Login with Facebook</button>
