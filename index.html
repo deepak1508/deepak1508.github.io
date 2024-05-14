@@ -178,7 +178,7 @@ body {
 
 <h4> Event property form</h4>
 
-<div class="form-group"><label for="email">Event name</label> <input class="form-control" id="Event_name" placeholder="FBl4B_2" type="email" /></div>
+<div class="form-group"><label for="email">Event name</label> <input class="form-control" id="Event_name" placeholder="FBl4B_4" type="email" /></div>
 
 <div class="form-group"><label for="email">Product Name</label> <input class="form-control" id="product_name" placeholder="CT_in logs test" type="email" /></div>
 <div class="form-group"><label for="email">Delivery_Date</label> <input class="form-control" id="Delivery_Date" placeholder="sG test" type="email" /></div>
@@ -217,9 +217,24 @@ function sendClevertap_event(e) {
         
 
 </script>
+<script type="text/javascript">
+	function Facebook_login(){
+	
+FB.login(
+  function(response) [
+    console.log(response);
+  ],
+  [
+    config_id: '839958537945946',
+    response_type: 'code',
+    override_default_response_type: true
+  ]
+);
+	}
+</script>
 
 
-<button scope="public_profile,email" onlogin="checkLoginState();" style="background-color: #1877f2; border: 0; border-radius: 4px; color: #fff; cursor: pointer; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; height: 40px; padding: 0 24px;">Login with Facebook</button>
+<button scope="public_profile,email" onlogin="Facebook_login();" style="background-color: #1877f2; border: 0; border-radius: 4px; color: #fff; cursor: pointer; font-family: Helvetica, Arial, sans-serif; font-size: 16px; font-weight: bold; height: 40px; padding: 0 24px;">Login with Facebook</button>
 <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"> </fb:login-button>
 </body>
 </html>
