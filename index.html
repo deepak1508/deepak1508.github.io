@@ -45,10 +45,10 @@
 
   window.fbAsyncInit = function() {
     FB.init({
-      appId      : '516007167348108',
+      appId:'516007167348108',
       cookie     : true,                     // Enable cookies to allow the server to access the session.
       xfbml      : true,                     // Parse social plugins on this webpage.
-      version    : 'v17.0'                  // Use this Graph API version for this call.
+      version    : 'v19.0'                  // Use this Graph API version for this call.
     });
 
 
@@ -178,7 +178,7 @@ body {
 
 <h4> Event property form</h4>
 
-<div class="form-group"><label for="email">Event name</label> <input class="form-control" id="Event_name" placeholder="FBl4B_2" type="email" /></div>
+<div class="form-group"><label for="email">Event name</label> <input class="form-control" id="Event_name" placeholder="FBl4B_4" type="email" /></div>
 
 <div class="form-group"><label for="email">Product Name</label> <input class="form-control" id="product_name" placeholder="CT_in logs test" type="email" /></div>
 <div class="form-group"><label for="email">Delivery_Date</label> <input class="form-control" id="Delivery_Date" placeholder="sG test" type="email" /></div>
@@ -225,9 +225,9 @@ FB.login(
     console.log(response);
   ],
   [
-    config_id: '249806204863127',
-    response_type: 'code',
-    override_default_response_type: true
+    config_id:'249806204863127',
+    response_type:'code',
+    override_default_response_type:true
   ]
 );
 	}
