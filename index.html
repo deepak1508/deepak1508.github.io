@@ -19,15 +19,6 @@
 
 <link rel="manifest" href="manifest.json">
 
-<script>
-  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.13.1";
-  analytics.load("o9pBFIWqeqO0PBaOdjgXHn3j1XaKQXMo");
-  analytics.page();
-  }}();
-</script>
-
-
-
 <link href="https://d1vqfl8cu8qgdj.cloudfront.net/assets/css/common/livemasternew.css?v=1.1" rel="stylesheet" />
 
 
@@ -111,10 +102,7 @@ body {
 
 </head>
 <body>
-	<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TF387Z6Z"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
+	
 
 <div class="topnav">
 <div class="topnav">
@@ -130,7 +118,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="form-group"><label for="email">Event name</label> <input class="form-control" id="Event_name" placeholder="FBl4B_988828186223824" type="email" /></div>
 
 <div class="form-group"><label for="email">Product Name Zendesk1</label> <input class="form-control" id="product_name" placeholder="CT_in logs test" type="email" /></div>
-<div class="form-group"><label for="email">Delivery_Date</label> <input class="form-control" id="Delivery_Date" placeholder="CleverTap Integration 2" type="email" /></div>
+<div class="form-group"><label for="email">Delivery_Date</label> <input class="form-control" id="Delivery_Date" placeholder="CleverTap Integration 3" type="email" /></div>
 <button class="btn btn-default" id="btnClevertap_event" type="button" onclick="sendClevertap_event()">Send Event</button></div>
 
 
@@ -166,21 +154,7 @@ function sendClevertap_event(e) {
         
 
 </script>
-<script type="text/javascript">
-	function Facebook_login(){
-	
-FB.login(
-  function(response) {
-    console.log(response);
-  },
-  {
-    config_id: '988828186223824'
 
-  }
-);
-</script>
-
-<fb:login-button  config_id="988828186223824" onlogin="checkLoginState();"> </fb:login-button>
 
 	<!-- Start of lcsbonic Zendesk Widget script -->
 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=ec9ff55d-dbff-4fb9-be7c-8586b198eb92"> </script>
